@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Autenticação | PHX Cargo - API - Documentação</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/LOGO2_PHX_ENGLISH.png">
+    <meta name="description" content="Documentação do Sistema - PHX Cargo 4.0 (API)">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.d8b5ec54.css" as="style"><link rel="preload" href="/assets/js/app.154ce4fa.js" as="script"><link rel="preload" href="/assets/js/2.3c3ff019.js" as="script"><link rel="preload" href="/assets/js/10.5e0d3352.js" as="script"><link rel="prefetch" href="/assets/js/11.b2a1bf61.js"><link rel="prefetch" href="/assets/js/12.3f689e44.js"><link rel="prefetch" href="/assets/js/13.50e879a2.js"><link rel="prefetch" href="/assets/js/14.d7e4bd62.js"><link rel="prefetch" href="/assets/js/15.93890549.js"><link rel="prefetch" href="/assets/js/16.a863d27b.js"><link rel="prefetch" href="/assets/js/17.582a1710.js"><link rel="prefetch" href="/assets/js/18.e10319f1.js"><link rel="prefetch" href="/assets/js/19.53799f67.js"><link rel="prefetch" href="/assets/js/20.11e26eda.js"><link rel="prefetch" href="/assets/js/21.e05d246f.js"><link rel="prefetch" href="/assets/js/22.d963a7c2.js"><link rel="prefetch" href="/assets/js/23.eecf4aa9.js"><link rel="prefetch" href="/assets/js/24.f1c2e6f0.js"><link rel="prefetch" href="/assets/js/25.35dd7ca9.js"><link rel="prefetch" href="/assets/js/26.3db4ffec.js"><link rel="prefetch" href="/assets/js/27.079abd93.js"><link rel="prefetch" href="/assets/js/28.53cb74b3.js"><link rel="prefetch" href="/assets/js/3.f99095f4.js"><link rel="prefetch" href="/assets/js/4.ddd3cd91.js"><link rel="prefetch" href="/assets/js/5.7cefb38b.js"><link rel="prefetch" href="/assets/js/6.a344bb2d.js"><link rel="prefetch" href="/assets/js/7.1f0f9547.js"><link rel="prefetch" href="/assets/js/8.2689c058.js"><link rel="prefetch" href="/assets/js/9.0267316b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d8b5ec54.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">PHX Cargo - API - Documentação</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guia/" class="nav-link">
+  Guia
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/api/authentication/" class="nav-link">
+  Autenticação
+</a></li><li class="dropdown-item"><!----> <a href="/api/master/" class="nav-link">
+  Master
+</a></li><li class="dropdown-item"><!----> <a href="/api/house/" class="nav-link">
+  House
+</a></li><li class="dropdown-item"><!----> <a href="/api/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/api/payment/" class="nav-link">
+  Pagamento
+</a></li><li class="dropdown-item"><!----> <a href="/api/importer/" class="nav-link">
+  Importador
+</a></li><li class="dropdown-item"><!----> <a href="/api/shipper/" class="nav-link">
+  Embarcador
+</a></li></ul></div></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><a href="/house/" class="nav-link">
+  House
+</a></div><div class="nav-item"><a href="/manifest/" class="nav-link">
+  Manifesto
+</a></div><div class="nav-item"><a href="/process/" class="nav-link">
+  Processo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Serpro" class="dropdown-title"><span class="title">Serpro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/serpro/" class="nav-link">
+  Serpro
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/acesso-api/" class="nav-link">
+  Acesso da API
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifesto-rmnf/" class="nav-link">
+  Manifesto - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/loteDeclaracao-rdir/" class="nav-link">
+  Lote de declaração - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/presencaCarga-rcgr/" class="nav-link">
+  Presença de Carga - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/comprovacaoPagamento-pgto/" class="nav-link">
+  Comprovação de pagamento - Envio e Retorno
+</a></li></ul></div></div><div class="nav-item"><a href="http://www.phxcargo.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  PHX Cargo
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guia/" class="nav-link">
+  Guia
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/api/authentication/" class="nav-link">
+  Autenticação
+</a></li><li class="dropdown-item"><!----> <a href="/api/master/" class="nav-link">
+  Master
+</a></li><li class="dropdown-item"><!----> <a href="/api/house/" class="nav-link">
+  House
+</a></li><li class="dropdown-item"><!----> <a href="/api/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/api/payment/" class="nav-link">
+  Pagamento
+</a></li><li class="dropdown-item"><!----> <a href="/api/importer/" class="nav-link">
+  Importador
+</a></li><li class="dropdown-item"><!----> <a href="/api/shipper/" class="nav-link">
+  Embarcador
+</a></li></ul></div></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><a href="/house/" class="nav-link">
+  House
+</a></div><div class="nav-item"><a href="/manifest/" class="nav-link">
+  Manifesto
+</a></div><div class="nav-item"><a href="/process/" class="nav-link">
+  Processo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Serpro" class="dropdown-title"><span class="title">Serpro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/serpro/" class="nav-link">
+  Serpro
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/acesso-api/" class="nav-link">
+  Acesso da API
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifesto-rmnf/" class="nav-link">
+  Manifesto - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/loteDeclaracao-rdir/" class="nav-link">
+  Lote de declaração - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/presencaCarga-rcgr/" class="nav-link">
+  Presença de Carga - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/comprovacaoPagamento-pgto/" class="nav-link">
+  Comprovação de pagamento - Envio e Retorno
+</a></li></ul></div></div><div class="nav-item"><a href="http://www.phxcargo.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  PHX Cargo
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>API</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/" aria-current="page" class="sidebar-link">API</a></li><li><a href="/api/authentication.html" aria-current="page" class="active sidebar-link">Autenticação</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/authentication.html#get-token" class="sidebar-link">GET TOKEN</a></li><li class="sidebar-sub-header"><a href="/api/authentication.html#observacao" class="sidebar-link">Observação</a></li></ul></li><li><a href="/api/master.html" class="sidebar-link">Master</a></li><li><a href="/api/house.html" class="sidebar-link">House</a></li><li><a href="/api/manifest.html" class="sidebar-link">Manifest</a></li><li><a href="/api/payment.html" class="sidebar-link">Pagamento</a></li><li><a href="/api/importer.html" class="sidebar-link">Importador</a></li><li><a href="/api/shipper.html" class="sidebar-link">Embarcador</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="autenticacao"><a href="#autenticacao" class="header-anchor">#</a> Autenticação</h1> <p>A API da <strong>PHX Cargo</strong> utiliza tecnologia <strong>OAuth2</strong> de modo a <code>TOKENIZAR</code> as requisições mantendo o controle de acesso de nossos clientes e parceiros;</p> <p>Para autenticar na API da <strong>PHX Cargo</strong> é necessário seguir as instruções abaixo:</p> <h2 id="get-token"><a href="#get-token" class="header-anchor">#</a> GET TOKEN</h2> <p>Para obter o seu <strong>token</strong> através da API siga os passos abaixo:</p> <div class="custom-block tip"><p class="custom-block-title">REQUEST</p> <p>[POST] https://api.phxcargo.net/oauth/token</p> <p>[BODY]</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;grant_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;client_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;client_secret&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1VZlziQ8J2obtEg1NByxxnC4DJqq6BeXs2Lxgkry&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;email@domain.com&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <details class="custom-block details"><summary>RESPONSE</summary> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;token_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bearer&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;expires_in&quot;</span><span class="token operator">:</span> <span class="token number">1295999</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;access_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjExYWUyYzk4ZTY4NzJjNjMzODA2ZWI4NDFjZjhjNzEwYTI0MTM0OGU0Y2RhN2I1NDljYTMyNzM4ZWQ1YjdkM2ZiMzJlNTRiYzg5Mzk1OWExIn0.eyJhdWQiOiIxIiwianRpIjoiMTFhZTJjOThlNjg3MmM2MzM4MDZlYjg0MWNmOGM3MTBhMjQxMzQ4ZTRjZGE3YjU0OWNhMzI3MzhlZDViN2QzZmIzMmU1NGJjODkzOTU5YTEiLCJpYXQiOjE1OTQzODM3MTksIm5iZiI6MTU5NDM4MzcxOSwiZXhwIjoxNTk1Njc5NzE5LCJzdWIiOiIyNCIsInNjb3BlcyI6WyIqIl19.RUyAuNokkv5CBI5q4mhJZqYk5yMyCVtF09JawxRAoYnNOqzeNJkGUc4wYC3e7np51JVuB2FRht0dYohtUujTyTUFfDFNXrevM-_c1qCfBd5b5Pc0CHUpCk5-KX0tgJqCZYukelzZGVX9h7X0tFRaIlr-vdXTlXka3Cdm7VuECxeQaWDklxQkak4HqY5DjJmIaqgjTh2yxaB0eTl5w9G5kA-md9z85LwqNTQuRDSMJvnJQsbCnBUj4dXoTlBb8NuCh5sR91S_JAEZiukMuQJ-FnD83ox1_dmWmGYmTparWfsl41OEnydIRBNXyCqNqJjaquAbDmhG9TujLtc0y5M6CvDVMMse8yCqYdl1TP7hl-J5QHaMJI1oixPpkM_dnCLODIlaWO2gXD1POJitCVThA4cpp4UuckaDu9cnP4VgCeKG7BLwYlk2GNJsVwPfn8fU_6cwmKc9cp2MZO1v_pDhNuR9VO3yagGi9gRa17i3_Y7OUWgdYQC3FXCocPw8sy__HC8lrR0IeKOvrrSgW6a8bvcocNozC8nBgXDiMgWqLMD3mhkaDhh5_knU0z-YMxPfHzGna6WTkJ9FNdRRaN01FnB33zIzEbrcZpC99HS2tHCgdunefNU2QTlOU1gA1zuoiPmp103aFTaeNSOxXEu4HTcIanX6LQpqF4jR0wfxafU&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;refresh_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;def502008f5bf619472bd52cadc96a5e7db3940a72afb645046c43fd273dc6e6bb2fe02508584b016ab5ff77a24f120c9ad02c47f759218035c6dffe411235ac081216680eb0f63b92932e51a288e0d6a33c72c92ac023b9eddefe6ef9dc5ee1512e5cb06592eb78061f803379b14db293d616d8d66f92f1ddef84dcbfe35aa8644226017b51736cf378916ece7b8d68faa9cde18e9d9eddbe3bdad09971c18a14db8bca298c396598e3bfbe3f544cba58c0b1af3ea8c31243bc1201a716e1662edbf707cf6ef33d69081956070a2e4b8a9f1c2c51748e61072f7c905efa5f325fcaf27617b4ffb228b9d91805aa1fec42b8179bb5d297ca30f798041444a68c576a603340f5b213ba084f9d5bb120359d18b2b0a5ddbcc43ba58623e52cd96371bb891fec9e9feda7e4d9922c8edabccd43a83003a06fa8ccc26fdb935b3fdb79bf07d6fb463fbaf95cd23489396fef72486d208e01ed76e2bf053b33b8f54be34a702fef&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <p>Copie o valor do campo <code>access_token</code> para poder acessar os recursos da nossa API corretamente.</p> <h2 id="observacao"><a href="#observacao" class="header-anchor">#</a> Observação</h2> <p>Caso o seus sistema peça informações sobre o <strong>prefixo</strong> que a API utiliza, então use o prefixo <strong>Bearer</strong> para que o <strong>token</strong> funcione corretamente.</p> <p>Caso você <strong>não possua acesso</strong> em nossa API entre em contato com a nossa equipe por <a href="http://www.phxcargo.net/" target="_blank" rel="noopener noreferrer">aqui<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/api/" class="prev router-link-active">
+        API
+      </a></span> <span class="next"><a href="/api/master.html">
+        Master
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.154ce4fa.js" defer></script><script src="/assets/js/2.3c3ff019.js" defer></script><script src="/assets/js/10.5e0d3352.js" defer></script>
+  </body>
+</html>

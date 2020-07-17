@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Manifest | PHX Cargo - API - Documentação</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/LOGO2_PHX_ENGLISH.png">
+    <meta name="description" content="Documentação do Sistema - PHX Cargo 4.0 (API)">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.d8b5ec54.css" as="style"><link rel="preload" href="/assets/js/app.154ce4fa.js" as="script"><link rel="preload" href="/assets/js/2.3c3ff019.js" as="script"><link rel="preload" href="/assets/js/13.50e879a2.js" as="script"><link rel="prefetch" href="/assets/js/10.5e0d3352.js"><link rel="prefetch" href="/assets/js/11.b2a1bf61.js"><link rel="prefetch" href="/assets/js/12.3f689e44.js"><link rel="prefetch" href="/assets/js/14.d7e4bd62.js"><link rel="prefetch" href="/assets/js/15.93890549.js"><link rel="prefetch" href="/assets/js/16.a863d27b.js"><link rel="prefetch" href="/assets/js/17.582a1710.js"><link rel="prefetch" href="/assets/js/18.e10319f1.js"><link rel="prefetch" href="/assets/js/19.53799f67.js"><link rel="prefetch" href="/assets/js/20.11e26eda.js"><link rel="prefetch" href="/assets/js/21.e05d246f.js"><link rel="prefetch" href="/assets/js/22.d963a7c2.js"><link rel="prefetch" href="/assets/js/23.eecf4aa9.js"><link rel="prefetch" href="/assets/js/24.f1c2e6f0.js"><link rel="prefetch" href="/assets/js/25.35dd7ca9.js"><link rel="prefetch" href="/assets/js/26.3db4ffec.js"><link rel="prefetch" href="/assets/js/27.079abd93.js"><link rel="prefetch" href="/assets/js/28.53cb74b3.js"><link rel="prefetch" href="/assets/js/3.f99095f4.js"><link rel="prefetch" href="/assets/js/4.ddd3cd91.js"><link rel="prefetch" href="/assets/js/5.7cefb38b.js"><link rel="prefetch" href="/assets/js/6.a344bb2d.js"><link rel="prefetch" href="/assets/js/7.1f0f9547.js"><link rel="prefetch" href="/assets/js/8.2689c058.js"><link rel="prefetch" href="/assets/js/9.0267316b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d8b5ec54.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">PHX Cargo - API - Documentação</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guia/" class="nav-link">
+  Guia
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/api/authentication/" class="nav-link">
+  Autenticação
+</a></li><li class="dropdown-item"><!----> <a href="/api/master/" class="nav-link">
+  Master
+</a></li><li class="dropdown-item"><!----> <a href="/api/house/" class="nav-link">
+  House
+</a></li><li class="dropdown-item"><!----> <a href="/api/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/api/payment/" class="nav-link">
+  Pagamento
+</a></li><li class="dropdown-item"><!----> <a href="/api/importer/" class="nav-link">
+  Importador
+</a></li><li class="dropdown-item"><!----> <a href="/api/shipper/" class="nav-link">
+  Embarcador
+</a></li></ul></div></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><a href="/house/" class="nav-link">
+  House
+</a></div><div class="nav-item"><a href="/manifest/" class="nav-link">
+  Manifesto
+</a></div><div class="nav-item"><a href="/process/" class="nav-link">
+  Processo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Serpro" class="dropdown-title"><span class="title">Serpro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/serpro/" class="nav-link">
+  Serpro
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/acesso-api/" class="nav-link">
+  Acesso da API
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifesto-rmnf/" class="nav-link">
+  Manifesto - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/loteDeclaracao-rdir/" class="nav-link">
+  Lote de declaração - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/presencaCarga-rcgr/" class="nav-link">
+  Presença de Carga - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/comprovacaoPagamento-pgto/" class="nav-link">
+  Comprovação de pagamento - Envio e Retorno
+</a></li></ul></div></div><div class="nav-item"><a href="http://www.phxcargo.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  PHX Cargo
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guia/" class="nav-link">
+  Guia
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API" class="dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/api/authentication/" class="nav-link">
+  Autenticação
+</a></li><li class="dropdown-item"><!----> <a href="/api/master/" class="nav-link">
+  Master
+</a></li><li class="dropdown-item"><!----> <a href="/api/house/" class="nav-link">
+  House
+</a></li><li class="dropdown-item"><!----> <a href="/api/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/api/payment/" class="nav-link">
+  Pagamento
+</a></li><li class="dropdown-item"><!----> <a href="/api/importer/" class="nav-link">
+  Importador
+</a></li><li class="dropdown-item"><!----> <a href="/api/shipper/" class="nav-link">
+  Embarcador
+</a></li></ul></div></div><div class="nav-item"><a href="/master/" class="nav-link">
+  Master
+</a></div><div class="nav-item"><a href="/house/" class="nav-link">
+  House
+</a></div><div class="nav-item"><a href="/manifest/" class="nav-link">
+  Manifesto
+</a></div><div class="nav-item"><a href="/process/" class="nav-link">
+  Processo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Serpro" class="dropdown-title"><span class="title">Serpro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/serpro/" class="nav-link">
+  Serpro
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/acesso-api/" class="nav-link">
+  Acesso da API
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifesto-rmnf/" class="nav-link">
+  Manifesto - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/loteDeclaracao-rdir/" class="nav-link">
+  Lote de declaração - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/manifest/" class="nav-link">
+  Manifesto
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/presencaCarga-rcgr/" class="nav-link">
+  Presença de Carga - Envio e Retorno
+</a></li><li class="dropdown-item"><!----> <a href="/serpro/comprovacaoPagamento-pgto/" class="nav-link">
+  Comprovação de pagamento - Envio e Retorno
+</a></li></ul></div></div><div class="nav-item"><a href="http://www.phxcargo.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  PHX Cargo
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>API</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/" aria-current="page" class="sidebar-link">API</a></li><li><a href="/api/authentication.html" class="sidebar-link">Autenticação</a></li><li><a href="/api/master.html" class="sidebar-link">Master</a></li><li><a href="/api/house.html" class="sidebar-link">House</a></li><li><a href="/api/manifest.html" aria-current="page" class="active sidebar-link">Manifest</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/manifest.html#api-manifest" class="sidebar-link">API - Manifest</a></li></ul></li><li><a href="/api/payment.html" class="sidebar-link">Pagamento</a></li><li><a href="/api/importer.html" class="sidebar-link">Importador</a></li><li><a href="/api/shipper.html" class="sidebar-link">Embarcador</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="manifest"><a href="#manifest" class="header-anchor">#</a> Manifest</h1> <p><strong>O que é um manifesto?</strong>: Um manifesto é um documento (XML) onde será  <code>MANIFESTADO</code> todas as informações que um <code>MASTER</code> e suas respectivas remessas das quais o <strong>SISCOMEX</strong> pede ao importar ou exportar uma carga.</p> <h2 id="api-manifest"><a href="#api-manifest" class="header-anchor">#</a> API - Manifest</h2> <p>Através da nossa <strong>API</strong> com <a href="/api/authentication/">autenticação</a> é possível realizar diversas operações sobre os manifestos de cada cliente.</p> <h3 id="get-all-manifests"><a href="#get-all-manifests" class="header-anchor">#</a> GET ALL MANIFESTS</h3> <p>Podemos por essa API recuperar todos os manifestos (do usuário que está logado pela API).</p> <p><a href="">Autenticação</a></p> <div class="custom-block tip"><p class="custom-block-title">REQUEST</p> <p>https://api.phxcargo.net/manifests</p></div> <details class="custom-block details"><summary>RESPONSE</summary> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">44</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MNF20200710M44&quot;</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated&quot;</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 09:32:46 -03&quot;</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;masters&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+				<span class="token punctuation">{</span>
+					<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">137</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PHX20200625M137&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SkyPostal-PHX: 2020-06-25&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;external_identifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+						<span class="token punctuation">{</span>
+							<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;00139881402&quot;</span>
+						<span class="token punctuation">}</span><span class="token punctuation">,</span>
+						<span class="token punctuation">{</span>
+							<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12388576&quot;</span>
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">]</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;airwaybills&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+						<span class="token punctuation">{</span>
+							<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2332</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PHX20200625H2332&quot;</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;15960623&quot;</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;amount_freight&quot;</span><span class="token operator">:</span> <span class="token number">6.29</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;gross_weight&quot;</span><span class="token operator">:</span> <span class="token number">2.86</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;total_amount&quot;</span><span class="token operator">:</span> <span class="token number">199.7</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;master_airwaybill_id&quot;</span><span class="token operator">:</span> <span class="token number">137</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;items&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;air_waybill_id&quot;</span><span class="token operator">:</span> <span class="token number">2332</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;(6 items) MNS KNT 55CTN 37PLY 8ELA FLEECE,MNS KNT 55CTN 37PLY 8ELA FLEECE,MNS KNT 95CTN5CASH SWEATER&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;commercial_value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;199.70&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;quantity&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;length&quot;</span><span class="token operator">:</span> <span class="token string">&quot;30.48&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token string">&quot;41.91&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token string">&quot;17.78&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;weight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.86&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+										<span class="token property">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US Dollar&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+									<span class="token punctuation">}</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;unitType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;transportType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+								<span class="token punctuation">}</span>
+							<span class="token punctuation">]</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;external_identifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;15960623&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PY073705615BR&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;60000551328602&quot;</span>
+								<span class="token punctuation">}</span>
+							<span class="token punctuation">]</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2559</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;additional_info&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;country_id&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;zip_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;95180000&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RUA BARAO DO RIO BRANCO 460, NA FRUTEIRA DO PARQUE&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FARROUPILHA&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;city_ibge_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;07906&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;cities_id&quot;</span><span class="token operator">:</span> <span class="token number">4074</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;state&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RS&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;neighborhood&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FARROUPILHA&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;country&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+									<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BRASIL&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">105</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;initials&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BR&quot;</span>
+								<span class="token punctuation">}</span>
+							<span class="token punctuation">}</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;importer&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2337</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GABRIEL JOSE PASA&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2559</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;additional_info&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;country_id&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;zip_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;95180000&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RUA BARAO DO RIO BRANCO 460, NA FRUTEIRA DO PARQUE&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FARROUPILHA&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;city_ibge_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;07906&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;cities_id&quot;</span><span class="token operator">:</span> <span class="token number">4074</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;state&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RS&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;neighborhood&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FARROUPILHA&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;country&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+											<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BRASIL&quot;</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">105</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;initials&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BR&quot;</span>
+										<span class="token punctuation">}</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;phones&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">383</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;(55)-123-54999675875&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phone&quot;</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;documents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2359</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CPF&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02627653067&quot;</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span>
+							<span class="token punctuation">}</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;shipper&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">89</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ABERCROMBIE amp; FITCH&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2690</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0000&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;additional_info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;New Albany&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;country_id&quot;</span><span class="token operator">:</span> <span class="token number">79</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;zip_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;43054&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100 Abercrombie way&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9707&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;city_ibge_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;cities_id&quot;</span><span class="token operator">:</span> <span class="token number">5610</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;state&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EX&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;neighborhood&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;country&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+											<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">79</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ESTADOS UNIDOS&quot;</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">249</span><span class="token punctuation">,</span>
+											<span class="token property">&quot;initials&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US&quot;</span>
+										<span class="token punctuation">}</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;phones&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">489</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01234&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phone&quot;</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;documents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2490</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CPF&quot;</span><span class="token punctuation">,</span>
+										<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01234&quot;</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span>
+							<span class="token punctuation">}</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;checkpoints&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7387</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FLT&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flight Created Sucessfully&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;date&quot;</span><span class="token operator">:</span> <span class="token string">&quot;25/06/2020 14:21:10 -03&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;25/06/2020 14:21:10 -03&quot;</span>
+								<span class="token punctuation">}</span>
+							<span class="token punctuation">]</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;master&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PHX20200625M137&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;external_identifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;00139881402&quot;</span>
+									<span class="token punctuation">}</span><span class="token punctuation">,</span>
+									<span class="token punctuation">{</span>
+										<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12388576&quot;</span>
+									<span class="token punctuation">}</span>
+								<span class="token punctuation">]</span>
+							<span class="token punctuation">}</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;statuses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pendente&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;09/07/2020 09:46:41 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;09/07/2020 17:01:05 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;09/07/2020 17:17:52 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pendente&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 09:32:46 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 09:44:17 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 10:05:57 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 11:04:39 -03&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifestada&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generated from RMNF&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 11:31:09 -03&quot;</span>
+								<span class="token punctuation">}</span>
+							<span class="token punctuation">]</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;company&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SKYPOSTAL&quot;</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SKYPOST INC.&quot;</span>
+							<span class="token punctuation">}</span><span class="token punctuation">,</span>
+							<span class="token property">&quot;customs_settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+								<span class="token property">&quot;customs_incoterm&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+									<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DDP&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;customs_adm&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ANVISA&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;tax_class&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+									<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+									<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Recolhimento Integral (RTS)&quot;</span>
+								<span class="token punctuation">}</span><span class="token punctuation">,</span>
+								<span class="token property">&quot;customs_service&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard&quot;</span>
+							<span class="token punctuation">}</span>
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">]</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;HAWB&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;company&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+						<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+						<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SKYPOSTAL&quot;</span><span class="token punctuation">,</span>
+						<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SKYPOST INC.&quot;</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;gross_weight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;138,46&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;manifest&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+						<span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">43</span><span class="token punctuation">,</span>
+						<span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MNF20200709M43&quot;</span><span class="token punctuation">,</span>
+						<span class="token property">&quot;external_identifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+							<span class="token punctuation">{</span>
+								<span class="token property">&quot;external_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PEX202007092999&quot;</span>
+							<span class="token punctuation">}</span>
+						<span class="token punctuation">]</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">]</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+				<span class="token punctuation">{</span>
+					<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;K3244.K07610XA.PEX00044.D200710.H090752&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Manifesto&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;outbox/K3244.K07610XA.PEX00044.D200710.H090752&quot;</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;processed&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;created_at&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10/07/2020 09:33:55 -03&quot;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">]</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/api/house.html" class="prev">
+        House
+      </a></span> <span class="next"><a href="/api/payment.html">
+        Pagamento
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.154ce4fa.js" defer></script><script src="/assets/js/2.3c3ff019.js" defer></script><script src="/assets/js/13.50e879a2.js" defer></script>
+  </body>
+</html>
